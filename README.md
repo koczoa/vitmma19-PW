@@ -1,2 +1,2 @@
 # vitmma19-PW
-Deeplearnig course homework
+Deep learning course homework
