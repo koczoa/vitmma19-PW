@@ -1,4 +1,5 @@
 *.txt
+*.csv
 *.zip
 .idea/
 __anklealign/
