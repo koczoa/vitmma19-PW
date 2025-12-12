@@ -56,6 +56,9 @@ for neptun in os.listdir():
             # annotation = [r['value']['choices'][0] for d in jsonfile for a in d['annotations'] for r in a['result'] if 'choices' in r.get('value', {})]
             for item in jsonfile:
                 annot = Annotation.NON
+                if neptun == "FO6K58" and item["file_upload"][9:].startswith("ITWQ3V"):
+                    # print("asdf")
+                    continue
                 try:
                     annot = Annotation([result["value"]["choices"][0] for annotation in item["annotations"] for result in annotation["result"]][0])
                 except ValueError:
@@ -68,8 +71,14 @@ for neptun in os.listdir():
                             annot = Annotation.PRO
                 except IndexError:
                     annot = Annotation.NON
-                filename = f"anklealign/{neptun}/{item["file_upload"][9:]}"
-                # print(filename, annot.value)
+                if neptun == "H51B9J":
+                    filename = f"anklealign/{neptun}/{item["file_upload"][9:-11]}.jpg"
+                else:
+                    filename = f"anklealign/{neptun}/{item["file_upload"][9:]}"
+
+                print(filename, annot.value)
+                if filename == "anklealign/ODZF0M/20.png":
+                    continue
                 labels[filename] = annot.value
 
 
@@ -85,4 +94,4 @@ print("-------------------------- INITIAL DATA DISTRIBUTION --------------------
 df = pd.DataFrame(list(labels.items()), columns=["files", "annotations"])
 df.drop(df[df["annotations"] == "bad"].index, inplace=True)
 df.to_csv("labels.csv", index=False)
-print(len(df))
+# print(len(df))
