@@ -6,8 +6,6 @@ from collections import Counter
 import keras
 
 
-
-
 df = pd.read_csv("labels.csv")
 
 IMG_HEIGHT = 32
@@ -75,6 +73,8 @@ model.compile(
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy']
 )
+
+model.summary()
 
 model.evaluate(X_data, y_encoded)
 model.save("baseline_model.h5")

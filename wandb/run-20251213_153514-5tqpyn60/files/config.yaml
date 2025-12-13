@@ -1,0 +1,57 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            e0bvlgcpeieis2ywg07oofhxhefsizny:
+                codePath: transfer_learning.py
+                codePathLocal: transfer_learning.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "511030091776"
+                        used: "252067766272"
+                email: onokoczo@protonmail.com
+                executable: /home/kocc/felev2/mt/.venv/bin/python
+                git:
+                    commit: 5ba13ed4b6d463e6c89f5d9b81e17c4b93d9a479
+                    remote: git@github.com:koczoa/vitmma19-PW.git
+                host: e15
+                memory:
+                    total: "16452325376"
+                os: Linux-6.17.5-arch1-1-x86_64-with-glibc2.42
+                program: /home/kocc/felev2/mt/transfer_learning.py
+                python: CPython 3.13.7
+                root: /home/kocc/felev2/mt
+                startedAt: "2025-12-13T14:35:14.898811Z"
+                writerId: e0bvlgcpeieis2ywg07oofhxhefsizny
+        m: []
+        python_version: 3.13.7
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 3
+                - 8
+                - 14
+            "4": 3.13.7
+            "5": 0.23.1
+            "10":
+                - 17
+            "12": 0.23.1
+            "13": linux-x86_64
+batch_size:
+    value: 16
+epochs:
+    value: 20
+img_size:
+    value: 32

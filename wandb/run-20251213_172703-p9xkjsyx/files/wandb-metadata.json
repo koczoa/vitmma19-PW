@@ -1,0 +1,28 @@
+{
+  "os":  "Linux-6.17.5-arch1-1-x86_64-with-glibc2.42",
+  "python":  "CPython 3.13.7",
+  "startedAt":  "2025-12-13T16:27:03.622371Z",
+  "program":  "/home/kocc/felev2/mt/wandb_transfer_tuning.py",
+  "codePath":  "wandb_transfer_tuning.py",
+  "codePathLocal":  "wandb_transfer_tuning.py",
+  "git":  {
+    "remote":  "git@github.com:koczoa/vitmma19-PW.git",
+    "commit":  "5ba13ed4b6d463e6c89f5d9b81e17c4b93d9a479"
+  },
+  "email":  "onokoczo@protonmail.com",
+  "root":  "/home/kocc/felev2/mt",
+  "host":  "e15",
+  "executable":  "/home/kocc/felev2/mt/.venv/bin/python",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "511030091776",
+      "used":  "252137877504"
+    }
+  },
+  "memory":  {
+    "total":  "16452325376"
+  },
+  "writerId":  "pui4dfdzqka0qq91w7g8nn7r7eqqxaeg"
+}
